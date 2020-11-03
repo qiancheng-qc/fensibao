@@ -221,7 +221,7 @@ export default {
     },
     // 提交
     submitForm(formName) {
-      if (this.ruleForm.password && this.ruleForm.checkPass) {
+      if (this.ruleForm.surfacePassword && this.ruleForm.surfaceCheckPass) {
         this.ruleForm.password = md5(this.ruleForm.surfacePassword);
         this.ruleForm.checkPass = md5(this.ruleForm.surfaceCheckPass);
       }
